@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fanbase</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+
+  </head>
+  <body>
+    <header>
+        <div class="header-top">
+            <div class="container header-content">
+                <div class="logo-container">
+                    <img src="Gambar/HoYoverse-Logo.png" alt="Logo Universitas" class="logo">
+                </div>
+                <div class="Fanbase-name">
+                    <h1>Fanbase Hoyoverse Game</h1>
+                    <p>Mari Bermain Bersama</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="Daftar" class="Pendaftaran-form">
+        <h2>Pendaftaran Fanbase</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="Nama">Nama lengkap</label>
+                <input type="text" id="Nama" placeholder="Masukkan Nama lengkap">
+            </div>
+            <div class="form-group">
+                <label for="Username">Username</label>
+                <input type="text" id="Username" placeholder=" Masukkan Username">
+            </div>
+            <div class="form-group">
+                <label for="Nomor Telepon">Nomor Telepon</label>
+                <input type="number" id="Nomor Telepon" placeholder=" Masukkan Nomor Telepon">
+            </div>
+            <div class="form-group">
+                <label for="Email">Email</label>
+                <input type="text" id="Email" placeholder=" Masukkan Email">
+            </div>
+            <div class="form-group">
+                <label for="Hoyoverse">Hoyoverse</label>
+                <select id="Hoyoverse'">
+                    <option value="1">Honkai Impact 3</option>
+                    <option value="2">Honkai: Star Rail</option>
+                    <option value="3">Genshin Impact</option>
+                    <option value="4">Zenless Zone Zero</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="foto">Foto*</label>
+                <input type="file" id="foto" name="foto" accept="image/*" required onchange="previewPhoto(event)">
+                <div class="photo-preview" id="photoPreview">
+                    <span>Preview Foto</span>
+                </div>
+                <div class="error" id="fotoError">Harap upload foto</div>
+            </div>
+            <button type="submit">Daftar Fanbase</button>
+        </form>
+    </section>
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+          <h3>Pendaftaran Berhasil!</h3>
+          <p>Terima kasih telah mendaftar di Fanbase Hoyoverse.</p>
+          <button onclick="closeModal()">Tutup</button>
+        </div>
+      </div>
+  </body>
